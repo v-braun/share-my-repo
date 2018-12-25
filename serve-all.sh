@@ -1,0 +1,1 @@
+node ./node_modules/gulp-cli/bin/gulp.js serve & go run main.go && fg
