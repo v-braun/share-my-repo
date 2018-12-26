@@ -6,14 +6,14 @@ networks:
       name: proxy-net
 
 services:
-  social-gh:
-    container_name: social-gh
+  share-my-repo:
+    container_name: share-my-repo
     networks:
       - proxy-net
     build: .
     restart: always
     environment:
-      - VIRTUAL_HOST=social-gh.viktor-braun.de
+      - VIRTUAL_HOST=share-my-repo.viktor-braun.de
       - VIRTUAL_PORT=80
-      - LETSENCRYPT_HOST=social-gh.viktor-braun.de
+      - LETSENCRYPT_HOST=share-my-repo.viktor-braun.de
       - LETSENCRYPT_EMAIL=mail@viktor-braun.de

@@ -13,7 +13,7 @@ RUN npm run dist
 
 FROM golang:1.8
 
-WORKDIR /go/src/github.com/v-braun/social-gh
+WORKDIR /go/src/github.com/v-braun/share-my-repo
 COPY . .
 COPY --from=build-env-client /app/bin ./bin/
 

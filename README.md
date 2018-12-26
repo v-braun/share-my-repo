@@ -1,11 +1,10 @@
-# social-gh
+# share-my-repo
 > 
 
 By [v-braun - viktor-braun.de](https://viktor-braun.de).
 
-[![](https://img.shields.io/github/license/v-braun/social-gh.svg?style=flat-square)](https://github.com/v-braun/social-gh/blob/master/LICENSE)
-[![Build Status](https://img.shields.io/travis/v-braun/social-gh.svg?style=flat-square)](https://travis-ci.org/v-braun/social-gh)
-[![codecov](https://codecov.io/gh/v-braun/social-gh/branch/master/graph/badge.svg)](https://codecov.io/gh/v-braun/social-gh)
+[![](https://img.shields.io/github/license/v-braun/share-my-repo.svg?style=flat-square)](https://github.com/v-braun/share-my-repo/blob/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/v-braun/share-my-repo.svg?style=flat-square)](https://travis-ci.org/v-braun/share-my-repo)
 ![PR welcome](https://img.shields.io/badge/PR-welcome-green.svg?style=flat-square)
 
 <p align="center">
@@ -19,20 +18,20 @@ By [v-braun - viktor-braun.de](https://viktor-braun.de).
 ## Installation
 
 ```
-install social-gh
+install share-my-repo
 ```
 
 
 ## Usage
 
 ```
-use social-gh
+use share-my-repo
 ```
 
 ## Configuration
 
 ```
-configure social-gh
+configure share-my-repo
 ```
 
 ## Run (dev)
@@ -58,8 +57,8 @@ docker-compose up
 ## Contributing
 
 Make sure to read these guides before getting started:
-- [Contribution Guidelines](https://github.com/v-braun/social-gh/blob/master/CONTRIBUTING.md)
-- [Code of Conduct](https://github.com/v-braun/social-gh/blob/master/CODE_OF_CONDUCT.md)
+- [Contribution Guidelines](https://github.com/v-braun/share-my-repo/blob/master/CONTRIBUTING.md)
+- [Code of Conduct](https://github.com/v-braun/share-my-repo/blob/master/CODE_OF_CONDUCT.md)
 
 ## License
-**social-gh** is available under the MIT License. See [LICENSE](https://github.com/v-braun/social-gh/blob/master/LICENSE) for details.
+**share-my-repo** is available under the MIT License. See [LICENSE](https://github.com/v-braun/share-my-repo/blob/master/LICENSE) for details.

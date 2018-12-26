@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for social-gh
+about: Suggest an idea for share-my-repo
 
 ---
 

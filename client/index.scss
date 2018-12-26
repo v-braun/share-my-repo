@@ -4,10 +4,78 @@ html, body{
   margin: 0px;
 }
 
+$border-color:rgb(225, 232, 237); 
+$prim-color: #607d8b;
+
 *{
   outline: none;
 }
 body{
+
+  .hero{
+    //margin-top: 0px;
+    background-color: $prim-color;
+    background: none repeat scroll 0 0 $prim-color;
+    height: 180px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+      //text-transform: uppercase;
+      color: #CCCCCC;
+      text-shadow: 0 -1px 1px #666666, 0 1px 1px #FFFFFF;
+      font-family: verdana;
+      font-weight: normal;
+      font-size: 40px;
+    }
+    span{
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
+  }
+
+  .area-input{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $border-color;
+    text-align: center;
+
+    .input-cnt{
+      color: $prim-color;
+      text-align: center;
+      input{
+        color: $prim-color;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $border-color;
+      }
+    }
+    button{
+      margin-top: 20px;
+      display: inline-block;
+      width: 80%;
+      color: $prim-color;
+      border-color: $prim-color;
+      padding: .8rem 2rem;
+      font-weight: 600;      
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    button:hover{
+      color: #fff;
+      background-color: $prim-color;
+      border-color: $prim-color;
+    }
+  }
   
   .area-results{
     display: flex;
@@ -28,11 +96,12 @@ body{
   }
   
   .area-result{
-    $area-margin: 10px;
+    $area-margin: 20px;
     $area-width: 380px - (2 * $area-margin);
     $area-height: 130px;
     $img-size: 125px;
     margin: $area-margin;
+    
     background-color: white;
     min-width: $area-width;
     max-width: $area-width;
@@ -43,7 +112,7 @@ body{
     background-color: #E1E8ED;
     border-style: solid;
     border-width: 1px;
-    border-color:rgb(225, 232, 237); 
+    border-color:$border-color; 
     border-top-left-radius: .85714em;
     border-bottom-left-radius: .85714em;
     
