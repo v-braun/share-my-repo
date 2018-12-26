@@ -10,6 +10,10 @@ $prim-color: #607d8b;
 *{
   outline: none;
 }
+a{
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */  
+}
 body{
 
   .hero{
@@ -60,7 +64,9 @@ body{
     }
     button{
       margin-top: 20px;
-      display: inline-block;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       width: 80%;
       color: $prim-color;
       border-color: $prim-color;
@@ -74,6 +80,13 @@ body{
       color: #fff;
       background-color: $prim-color;
       border-color: $prim-color;
+    }
+    #randomLink{
+      margin-top: 20px;
+      display: block;
+      font-size: 10px;
+      color: $prim-color;
+      text-decoration: underline;
     }
   }
   
@@ -93,13 +106,45 @@ body{
     flex-direction: row;
     text-align: center;
     font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
+  .area-new, .area-old{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .url-cntr{
+    display: flex;
+    //margin-bottom: 20px;
+
+    .copy, .url{
+      padding: 3px;
+      font-size: 14px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: $prim-color;      
+      display: inline-block;
+    }
+    .url{
+      width: 100%;
+    }
+    .copy{
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-left-style: none;
+      background-color: $prim-color;
+      color: #fff;
+    }
+    
+  }
+
   .area-result{
     $area-margin: 20px;
     $area-width: 380px - (2 * $area-margin);
+    $img-size: 130px;
     $area-height: 130px;
-    $img-size: 125px;
     margin: $area-margin;
     
     background-color: white;
@@ -115,13 +160,21 @@ body{
     border-color:$border-color; 
     border-top-left-radius: .85714em;
     border-bottom-left-radius: .85714em;
+    overflow: hidden;
     
     
-    
-    img{
-      width: $img-size;
-      height: $img-size;
+    .img-hoder{
+      min-width: $img-size;
+      min-height: $img-size;
+      max-width: $img-size;
+      max-height: $img-size;
     }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
     
     .post-content{
       background-color: white;
@@ -138,7 +191,10 @@ body{
         margin:0px;
         margin-top: 4px;        
       }
+
+
     }
+    
   }
 }
 

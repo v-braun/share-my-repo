@@ -17,29 +17,46 @@
   </section>
   <section class="area-input">
     <div class="input-cnt">
-      <input id="usr" placeholder="user" />
+      <input id="usr" value="vsouza" placeholder="user" />
       <span>/</span>
-      <input id="repo" placeholder="repo" />
+      <input id="repo" value="awesome-ios" placeholder="repo" />
     </div>
-    <button>generate</button>
+    <button id="btnGen">generate</button>
+    <a href="#" id="randomLink">or click here</a>
   </section>
   
   <section class="area-results">
-    <section class="area-old area-result">
-      <img src="https://pbs.twimg.com/card_img/1076965184248471553/7rbgeYlu?format=png&name=144x144_2" />
-      <div class="post-content">
-        <h2>sindresorhus/awesome</h2>
-        <p>:sunglasses: Curated list of awesome lists. Contribute to sindresorhus/awesome development by creating an account on G...</p>
+    <section class="area-old">
+      <div class="area-result">
+        <div class="img-hoder">
+          <img src="http://lorempixel.com/150/150/people/" />
+        </div>
+        <div class="post-content">
+          <h2>user/repo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorem dicta, totam repellendus ut ab quo ad nobis fuga dolorum fugit vitae! Placeat id temporibus vitae beatae officia esse atque.</p>
+        </div>
+      </div>
+      <div class="url-cntr">
+        <input class="url"></input>
+        <a href="#" id="cpOld" class="copy">COPY</a>
       </div>
     </section>
     <div class="convert-container">
       <div class="lbl">share-my-repo</div>
     </div>
-    <section class="area-new area-result">
-      <img src="https://pbs.twimg.com/card_img/1076965184248471553/7rbgeYlu?format=png&name=144x144_2" />
-      <div class="post-content">
-        <h2>sindresorhus/awesome</h2>
-        <p>:sunglasses: Curated list of awesome lists. Contribute to sindresorhus/awesome development by creating an account on G...</p>
+    <section class="area-new">
+      <div class="area-result">
+        <div class="img-hoder">
+          <img src="http://lorempixel.com/150/150/abstract/" />
+        </div>
+        <div class="post-content">
+          <h2>user/repo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorem dicta, totam repellendus ut ab quo ad nobis fuga dolorum fugit vitae! Placeat id temporibus vitae beatae officia esse atque.</p>
+        </div>
+      </div>
+      <div class="url-cntr">
+        <input class="url"></input>
+        <a id="cpNew" href="#" class="copy">COPY</a>
       </div>
     </section>
   </section>
