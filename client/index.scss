@@ -2,6 +2,7 @@ html, body{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   padding: 0px;
   margin: 0px;
+  height: 100%;
 }
 
 $border-color:rgb(225, 232, 237); 
@@ -15,7 +16,7 @@ a{
   text-decoration: inherit; /* no underline */  
 }
 body{
-
+  
   .hero{
     //margin-top: 0px;
     background-color: $prim-color;
@@ -26,7 +27,7 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-
+    
     h1{
       //text-transform: uppercase;
       color: #CCCCCC;
@@ -40,7 +41,7 @@ body{
       letter-spacing: 2px;
     }
   }
-
+  
   .area-input{
     margin-top: 20px;
     margin-left: auto;
@@ -51,7 +52,7 @@ body{
     border-width: 1px;
     border-color: $border-color;
     text-align: center;
-
+    
     .input-cnt{
       color: $prim-color;
       text-align: center;
@@ -113,18 +114,18 @@ body{
   .area-new, .area-old{
     display: flex;
     flex-direction: column;
-
+    
   }
   .share-container{
     padding: 5px;
     padding-right: 25px;
     padding-left: 25px;
-
+    
     h3{
       margin: 0px;
       text-align: center;
     }
-
+    
     .share-subtitle{
       padding-top: 25px;
       padding-bottom: 25px;
@@ -132,11 +133,11 @@ body{
         font-weight: 500;
       }
     }
-
+    
     .url-cntr{
       display: flex;
       //margin-bottom: 20px;
-  
+      
       .copy, .url{
         padding: 3px;
         font-size: 14px;
@@ -158,14 +159,15 @@ body{
       
     }    
   }
-
-
+  
+  
   .area-result{
     $area-margin: 20px;
     $area-width: 380px - (2 * $area-margin);
     $img-size: 130px;
     $area-height: 130px;
     margin: $area-margin;
+    margin-bottom: 50px;
     
     background-color: white;
     min-width: $area-width;
@@ -194,7 +196,7 @@ body{
       height: 100%;
       object-fit: contain;
     }
-  
+    
     
     .post-content{
       background-color: white;
@@ -211,11 +213,51 @@ body{
         margin:0px;
         margin-top: 4px;        
       }
-
-
+      
+      
     }
     
   }
+  
+  #footer{
+    box-sizing: border-box;
+    max-height: 48px;
+    padding: 15px 30px 15px 30px;
+    justify-content: space-between;
+    display: flex;
+    
+    background-color: $prim-color;
+    border-top: 1px solid darken($prim-color, 10);;
+    border-top-color: darken($prim-color, 30);    
+    color: #CCCCCC;
+    padding: 10px;
+    width: 100%;        
+    position: fixed;
+    bottom: 0px;
+    height: auto;
+
+    font-weight: 200;
+    
+    a:hover{
+      color: lighten($color: white, $amount: 20);
+    }
+    a{
+      text-decoration: underline;
+      color: lighten($color: #CCCCCC, $amount: 20);
+    }
+    .me{
+      i{
+        color: #f44336;
+      }
+    }
+
+    .home{
+      i{
+        color: #795548;
+      }
+    }    
+    
+  }  
 }
 
 .social-btn{
@@ -234,21 +276,21 @@ body{
   font-weight: 800;
   
   i{
-      font-size: 13px;
-      margin-right: 1px;
+    font-size: 13px;
+    margin-right: 1px;
   }
   
   &.pinterest > i{
-      color: #bd081c;
+    color: #bd081c;
   }
   &.twitter > i{
-      color: #3a8bbb;
+    color: #3a8bbb;
   }
   &.facebook > i{
-      color: #4267b2;
+    color: #4267b2;
   }
   &.github > i{
-      color: black;
+    color: black;
   }
 }
 
@@ -271,7 +313,7 @@ body{
         content: "➡️";
         padding:5px;
       }
-            
+      
     }  
   } 
 }
