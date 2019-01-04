@@ -5,8 +5,8 @@ WORKDIR /app
 COPY conf.js ./
 COPY gulpfile.js ./
 COPY package.json ./
-COPY ./client ./client/
 RUN npm install
+COPY ./client ./client/
 RUN npm run dist
 
 

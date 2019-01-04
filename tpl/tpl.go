@@ -11,7 +11,7 @@ var htmlTpl = `
   <meta http-equiv="Content-Language" content="en">
   <meta name="viewport" content="width=device-width">
 
-  <title>zzgab/uiwebagent: iOS Objective C UIWebView category to spoof user-defiend UserAgent</title>
+  <title>{{.Description}}</title>
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta content="{{.Image}}" name="twitter:image:src" />
   <meta content="@github" name="twitter:site" />
