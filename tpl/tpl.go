@@ -22,7 +22,7 @@ var htmlTpl = `
   <meta content="GitHub" property="og:site_name" />
   <meta content="object" property="og:type" />
   <meta content="{{.User}}/{{.Repo}}" property="og:title" />
-  <meta content="{{.Url}}" property="og:url" />
+  <meta content="{{.ResolverUrl}}" property="og:url" />
   <meta content="{{.Description}}" property="og:description" />
   <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
   <meta name="description" content="{{.Description}}">
@@ -41,6 +41,7 @@ type Model struct {
 	Description string
 	User        string
 	Repo        string
+	ResolverUrl string
 }
 
 func GetTemplate() string {
@@ -54,6 +55,7 @@ func NewModel(user string, repo string, res *heroscrape.SearchResult) *Model {
 	m.Repo = repo
 	m.User = user
 	m.Url = "https://github.com/" + user + "/" + repo
+	m.ResolverUrl = "https://share-my-repo.vibr.app/" + user + "/" + repo
 
 	return m
 }
