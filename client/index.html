@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>share-my-repo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <meta name="description" content="Make GitHub repository links shareable" />
+  <meta itemprop="name" content="Share my Repo">
+  <meta itemprop="description" content="Make GitHub repository links shareable">
+
+
   
   <!-- inject:css -->
   <!-- endinject -->     
@@ -36,9 +42,20 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorem dicta, totam repellendus ut ab quo ad nobis fuga dolorum fugit vitae! Placeat id temporibus vitae beatae officia esse atque.</p>
         </div>
       </div>
-      <div class="url-cntr">
-        <input class="url"></input>
-        <a href="#" id="cpOld" class="copy">COPY</a>
+      <div class="share-container">
+        <div class="url-cntr">
+          <input class="url"></input>
+          <a href="#" id="cpOld" class="copy">COPY</a>
+        </div>
+        <div class="share-subtitle">
+          <span>share per click:</span>
+          <a id="tweet-old" class="social-btn twitter" href="#" target="__blank">
+            <i class="fab fa-twitter"></i> Tweet
+          </a>
+          <a id="fb-old" class="social-btn facebook" href="#" target="__blank">
+            <i class="fab fa-facebook"></i> Share
+          </a>
+        </div>        
       </div>
     </section>
     <div class="convert-container">
@@ -54,10 +71,22 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dolorem dicta, totam repellendus ut ab quo ad nobis fuga dolorum fugit vitae! Placeat id temporibus vitae beatae officia esse atque.</p>
         </div>
       </div>
-      <div class="url-cntr">
-        <input class="url"></input>
-        <a id="cpNew" href="#" class="copy">COPY</a>
+      <div class="share-container">
+        <div class="url-cntr">
+          <input class="url"></input>
+          <a id="cpNew" href="#" class="copy">COPY</a>
+        </div>
+        <div class="share-subtitle">
+          <span>share per click:</span>
+          <a id="tweet-new" class="social-btn twitter" href="#" target="__blank">
+            <i class="fab fa-twitter"></i> Tweet
+          </a>
+          <a id="fb-new" class="social-btn facebook" href="#" target="__blank">
+            <i class="fab fa-facebook"></i> Share
+          </a>          
+        </div>
       </div>
+      
     </section>
   </section>
   

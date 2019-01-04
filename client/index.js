@@ -74,8 +74,17 @@ function run(){
     document.querySelector('.area-new p').innerText = res.EndResult.Description;
 
     var getUrl = window.location;
-    document.querySelector('.area-old .url').value = 'https://github.com/' + usr + '/' + repo;
-    document.querySelector('.area-new .url').value = getUrl.protocol + '//' + getUrl.hostname + '/' + usr + '/' + repo;
+    var oldUrl = 'https://github.com/' + usr + '/' + repo;
+    var newUrl = getUrl.protocol + '//' + getUrl.hostname + '/' + usr + '/' + repo;
+
+    document.querySelector('.area-old .url').value = oldUrl;
+    document.querySelector('.area-new .url').value = newUrl;
+
+    document.getElementById('tweet-new').href = 'https://twitter.com/intent/tweet/?url=' + encodeURIComponent(newUrl);
+    document.getElementById('fb-new').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(newUrl);
+
+    document.getElementById('tweet-old').href = 'https://twitter.com/intent/tweet/?url=' + encodeURIComponent(oldUrl);
+    document.getElementById('fb-old').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(oldUrl);
 
   });    
 }
