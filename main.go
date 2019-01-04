@@ -24,6 +24,7 @@ func main() {
 	bndAddr := ":3001"
 	r := mux.NewRouter()
 
+	r.PathPrefix("/assets/").Handler(http.StripPrefix("/assets/", http.FileServer(http.Dir("./bin/assets/"))))
 	r.HandleFunc("/api/{user}/{repo}", scrapeApiHandler).Methods("GET")
 	r.HandleFunc("/{user}/{repo}", scrapeHtmlHandler).Methods("GET")
 	r.PathPrefix("/").Handler(http.FileServer(http.Dir("./bin/")))
