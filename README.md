@@ -8,7 +8,7 @@ By [v-braun - viktor-braun.de](https://viktor-braun.de).
 ![PR welcome](https://img.shields.io/badge/PR-welcome-green.svg?style=flat-square)
 
 <p align="center">
-<img width="70%" src="https://github.com/v-braun/share-my-repo/blob/master/.assets/logo.svg" />
+<img width="70%" src="https://github.com/v-braun/share-my-repo/blob/master/.assets/logo.png" />
 </p>
 
 
