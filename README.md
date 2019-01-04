@@ -1,5 +1,5 @@
 # share-my-repo
-> 
+> Make GitHub repository links shareable
 
 By [v-braun - viktor-braun.de](https://viktor-braun.de).
 
@@ -8,31 +8,16 @@ By [v-braun - viktor-braun.de](https://viktor-braun.de).
 ![PR welcome](https://img.shields.io/badge/PR-welcome-green.svg?style=flat-square)
 
 <p align="center">
-<img width="70%" src="https://via.placeholder.com/800x480.png?text=this%20is%20a%20placeholder%20for%20the%20project%20banner" />
+<img width="70%" src="https://github.com/v-braun/share-my-repo/blob/master/.assets/logo.svg" />
 </p>
 
 
 ## Description
+If you share your repository on twitter / reddit / etc. GitHub set the og:image tag to your profile picture ([see this issue](https://github.com/isaacs/github/issues/612)).  
+Inspired by [zzgab](https://github.com/zzgab) I built this WebApp.
 
 
-## Installation
 
-```
-install share-my-repo
-```
-
-
-## Usage
-
-```
-use share-my-repo
-```
-
-## Configuration
-
-```
-configure share-my-repo
-```
 
 ## Run (dev)
 
@@ -45,6 +30,10 @@ npm run serve-all
 ```bash
 docker-compose up
 ```
+
+## Related Projects
+- [hero-scrape](https://github.com/v-braun/hero-scrape) The lib
+- [hero-scrape-web](https://github.com/v-braun/hero-scrape-web) Find hero images on a webpage
 
 
 ## Authors
